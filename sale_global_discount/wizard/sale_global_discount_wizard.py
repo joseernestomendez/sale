@@ -35,7 +35,7 @@ class sale_global_discount_wizard(models.TransientModel):
             line.discount = self.amount
         return True
 
-    class purchase_global_discount_wizard(models.TransientModel):
+class purchase_global_discount_wizard(models.TransientModel):
     _name = "purchase.order.global_discount.wizard"
 
     # todo implement fixed amount
